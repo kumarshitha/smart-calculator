@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <main class="calculator-container">
+        <div class="calculator">
+
+            <div class="heading">
+                <p>SMART CALCULATOR</p>
+                <h1>Calculate with Ease.</h1>
+                <span>Simple. Fast. Accurate.</span>
+            </div>
+
+            <div class="input-group">
+                <label for="num1">First Number</label>
+                <input type="number" id="num1" placeholder="Enter first number">
+            </div>
+
+            <div class="input-group">
+                <label for="num2">Second Number</label>
+                <input type="number" id="num2" placeholder="Enter second number">
+            </div>
+
+            <div class="operations">
+                <button type="button" data-operation="add">+</button>
+                <button type="button" data-operation="subtract">−</button>
+                <button type="button" data-operation="multiply">×</button>
+                <button type="button" data-operation="divide">÷</button>
+            </div>
+
+            <div class="result-box">
+                <span>RESULT</span>
+                <h2 id="result">0</h2>
+                <p id="message">Enter numbers and select an operation.</p>
+            </div>
+
+            <button type="button" class="clear-btn" id="clearBtn">
+                Clear All
+            </button>
+
+        </div>
+    </main>
+    <script src="./app.js" defer></script>
+</body>
+</html>
